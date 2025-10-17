@@ -5,7 +5,7 @@ import Sectionpromo from "./Sectionpromo";
 
 const Header = () => {
   return (
-    <div>
+    <div className="mt-20 md:mt-30">
       <h1 className="text-center text-xl">logo menu</h1>
       <div className="bg-gray-950 rounded-xl shadow-lg p-4 text-white max-w-sm mx-auto">
         <h2 className="text-[1.45rem] font-bold text mb-1">Prato do dia</h2>

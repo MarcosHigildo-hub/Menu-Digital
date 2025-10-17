@@ -22,13 +22,13 @@ function SearchBar() {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Pesquisar..."
-        className={`transition-all duration-300 ease-in-out border rounded-full px-2 py-1
-      ${open ? "w-40 opacity-100" : "w-0 opacity-0"}`}
+        className={`transition-all duration-300 ease-in-out border-white border-2 text-2xl rounded-full px-2 py-1 placeholder:text-gray-400 placeholder:text-2xl placeholder:px-3
+      ${open ? "w-60 opacity-100" : "w-0 opacity-0"}`}
       />
       <button
         onClick={toggleSearch}
       >
-        <Search size={30} />
+        <Search size={40} />
       </button>
     </div>
   );

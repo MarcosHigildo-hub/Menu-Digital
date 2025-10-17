@@ -8,16 +8,21 @@ import MenuBtn from "./MenuBtn";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between px-6 py-6">
-      <div className="flex gap-4">
+    <nav className="bg-white flex w-full justify-between px-6 py-4 fixed top-0 md:bg-gray-950 md:rounded-b-4xl md:py-6">
+      <div className="flex justify-between items-center w-full md:hidden">
         <MenuBtn />
-        {/* <Image src={image.logo} alt="Logo" className="w-12 h-12" /> */}
+        <ShoppingCart size={40} className="text-gray-600" />
       </div>
-     
-      <div className="flex gap-2">
-        <SearchBar />
-        <ShoppingCart size={30}/>
-        <User size={30} />
+
+      <div className="hidden md:flex md:justify-between md:items-center md:text-white w-full md:px-9">
+        <div>
+          <h1 className="text-3xl font-bold">Logo</h1>
+        </div>
+        <div className="flex gap-5">
+          <SearchBar />
+          <ShoppingCart size={40} />
+          <User size={40} />
+        </div>
       </div>
     </nav>
   );

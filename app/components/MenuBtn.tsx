@@ -9,53 +9,56 @@ function MenuBtn() {
   const toggleBtn = () => setOpen(!open);
 
   return (
-    <div>
-      <div>
-        <button onClick={toggleBtn} className="text-gray-600">
+    <div className="md:hidden">
+        <button onClick={toggleBtn} className="text-gray-600 ">
           {open ? <X size={40} /> : <Menu size={40} />}
         </button>
 
         <div
           className={`${
             open ? "block" : "hidden"
-          } absolute top-5 left-15 w-full rounded-2xl bg-white`}
+          } absolute top-15 left-0 w-full rounded-2xl bg-white`}
         >
-          <ul className="flex flex-col">
-            <li className="border-b-2 border-gray-800">
-              <Link href="/" className="flex gap-2 py-2 px-5">
-                <Home size={30} className="text-gray-950" />
-                <p className="text-gray-500 text-[20px] hover:text-gray-950">
-                  Menu
-                </p>
+          <ul className="flex flex-col px-17 py-3 ">
+            <li className="border-b-2 mb-2 border-gray-600 pb-2">
+              <Link
+                href="/"
+                className="flex gap-2 text-gray-600 hover:text-gray-950"
+              >
+                <Home size={30} />
+                <p className="text-[22px]">Menu</p>
               </Link>
+            </li>
 
-              <Link href="/" className="flex gap-2 py-2 px-5">
-                <ShoppingCart
-                  size={30}
-                  className="text-gray-500 hover:hover:text-gray-950"
-                />
-                <p className="text-gray-950 text-[20px]">Pedidos</p>
+            <li className="border-b-2 mb-2 border-gray-600 pb-2">
+              <Link
+                href="/"
+                className="flex gap-2 text-gray-600 hover:text-gray-950 "
+              >
+                <ShoppingCart size={30} />
+                <p className="text-[22px]">Pedidos</p>
               </Link>
+            </li>
 
-              <Link href="/" className="flex gap-2 py-2 px-5">
+            <li className="border-b-2 mb-2 border-gray-600 pb-2">
+              <Link href="/" className="flex gap-2 text-gray-600 hover:text-gray-950">
                 <UserSquare
                   size={30}
-                  className="text-gray-500 hover:text-gray-950"
                 />
-                <p className="text-gray-950 text-[20px]">Conta</p>
+                <p className="text-[20px]">Conta</p>
               </Link>
+            </li>
 
-              <Link href="/" className="flex gap-2 py-2 px-5">
+            <li className="border-b-2 mb-2 border-gray-600 pb-2">
+              <Link href="/" className="flex gap-2 text-gray-600 hover:text-gray-950">
                 <Phone
                   size={30}
-                  className="text-gray-500 hover:text-gray-950"
                 />
-                <p className="text-gray-950 text-[20px]">Contacto</p>
+                <p className="text-[20px]">Contacto</p>
               </Link>
             </li>
           </ul>
         </div>
-      </div>
     </div>
   );
 }
