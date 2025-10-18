@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 const page = () => {
   return (
     <>
-      <Navbar />
+        <Navbar />
 
       <div className='px-6 md:px-16 lg:px-32'>
         <Header />
