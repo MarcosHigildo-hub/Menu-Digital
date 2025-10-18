@@ -23,4 +23,11 @@ export const PromosData: Promo[] = [
     name: "Cerveja 2M",
     price: "60,00 MZN",
   },
+    {
+    src: image.promocao2,
+    alt: "Pizza de frango",
+    discount: "Paga 1 leva 2",
+    name: "Pizza de frango",
+    price: "600,00 MZN",
+  },
 ]

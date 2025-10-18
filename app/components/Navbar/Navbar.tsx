@@ -8,7 +8,7 @@ import MenuBtn from "./MenuBtn";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white flex w-full justify-between px-6 py-4 fixed top-0 md:bg-gray-950 md:rounded-b-4xl md:py-6">
+    <nav className="bg-white flex w-full justify-between px-6 py-4 fixed top-0 md:bg-gray-950 md:rounded-b-4xl md:py-6 lg:py-4">
       <div className="flex justify-between items-center w-full md:hidden">
         <MenuBtn />
         <ShoppingCart size={40} className="text-gray-600" />

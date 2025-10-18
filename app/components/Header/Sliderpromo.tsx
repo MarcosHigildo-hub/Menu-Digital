@@ -6,8 +6,8 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import '../styles/swiper-custom.css';
-import { Promo } from "../types/Promo";
+import '../../styles/swiper-custom.css';
+import { Promo } from "@/app/types/Promo";
 
 
 interface SliderpromoProps {
@@ -32,7 +32,7 @@ const Sliderpromo:React.FC<SliderpromoProps> = ({ images }) => {
         768: { slidesPerView: 3 },
         1024: { slidesPerView: 4 },
       }}
-      className="pb-4"
+      
     >
       {images.map((promo, index) => (
         <SwiperSlide key={index}>
